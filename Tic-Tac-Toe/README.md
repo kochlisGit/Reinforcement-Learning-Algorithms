@@ -42,6 +42,10 @@ So, i came up with a value function is a list of 19683 states (3^9). Initially, 
 The agent then will play vs another agent with the opposite letter and try to beat him every time, using the epsilon greedy algorithm (with e = 0.1).
 At the end of the game, the agent updates the values of each state of the game in the value function and plays again.
 
+# Value Function Update
+
+In this example, i used the monte-carlo update: **V(s) = V(s) + gamma*( Gt - V(s) )**
+
 I found that 10000 episodes are more than enough for the agent to reach the 'god mode', in which he never loses.
 
 # Running the game
