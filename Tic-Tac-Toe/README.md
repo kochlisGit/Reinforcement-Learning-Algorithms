@@ -11,6 +11,7 @@ O | X | O
 O | O | X
 ----------
 X | X | O
+----------
 
 In this example, The player with the letter 'O' wins the game, because he managed to put 3 Os in a diagonal.
 
