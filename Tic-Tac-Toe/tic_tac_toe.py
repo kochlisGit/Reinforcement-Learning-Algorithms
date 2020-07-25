@@ -170,15 +170,12 @@ class Agent:
 
     # Rewards the agent based on the states and final result.
     def update(self, env):
-        for state in reversed(self.state_history):
-            reward = env.get_reward(self.piece)
-            target = reward
-            for state_id in reversed(self.state_history):
-                value = self.value_function[state_id] + self.learn_rate*( target - self.value_function[state_id] )
-                self.value_function[state_id] = value
-                target = value
-            self.reset_state_history()
-
+        reward = env.get_reward(self.piece)
+        target = reward
+        for state_id in reversed(self.state_history):
+            value = self.value_function[state_id] + self.learn_rate*( target - self.value_function[state_id] )
+            self.value_function[state_id] = value
+            target = value
         self.reset_state_history()
 
 # Generates all possible states for both players.
