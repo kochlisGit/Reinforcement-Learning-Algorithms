@@ -41,6 +41,8 @@ Note: In monte-carlo updates, I've used a simple value function, instead of Q, w
  
 # Comparisons & Results
 
+As you can see in plots above, all algorithms are pretty solid and converge within the first 10-20 episodes.
+
 ![Run1](https://github.com/kochlisGit/Reinforcement-Learning/blob/master/Frozen%20Lake/vis_1.png)
 
 ![Run2](https://github.com/kochlisGit/Reinforcement-Learning/blob/master/Frozen%20Lake/vis_2.png)
@@ -51,8 +53,3 @@ Note: In monte-carlo updates, I've used a simple value function, instead of Q, w
 
 ![Run5](https://github.com/kochlisGit/Reinforcement-Learning/blob/master/Frozen%20Lake/vis_5.png)
  
- 
- 
-     
- 
-    
