@@ -145,7 +145,7 @@ class Agent:
     # Updates the Q-Function. Q(state, action) = Q(state, action) + alpha * (reward + gamma * Q'(state', action') - Q(state, action) )
     def update(self, reward, action, new_state):
         state = self.state_history[-1]
-        target = self.gamma*( reward + np.max( self.Q[new_state] ) )
+        target = reward + self.gamma*np.max( self.Q[new_state] )
         self.Q[state][action] += self.alpha * ( target - self.Q[state][action] )
 
 # Constructs the lake's enviroment. It returns a lake with the agent, the holes and the goals.
