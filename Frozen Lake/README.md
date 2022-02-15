@@ -53,3 +53,7 @@ As you can see in plots above, all algorithms are pretty solid and converge with
 
 ![Run5](https://github.com/kochlisGit/Reinforcement-Learning/blob/master/Frozen%20Lake/vis_5.png)
  
+# Future Work
+1. Add more Environments
+2. Add Sarsa algorithm
+3. Rewrite the entire scripts, in order to be more clear for the viewers.
